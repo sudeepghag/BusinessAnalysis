@@ -15,9 +15,8 @@ Validation Rule Example:
 	   ISBLANK ( LeadCreatedDate__c )
 
 3. Customer Contacts can only be related to Customer Accounts
-Validation Rule Example:
 
-	  RecordType.Id = ‘01234000000kL1i’ && NOT(Account.RecordTypeId = ‘02345000000kL1d’)
+		RecordType.Id = ‘01234000000kL1i’ && NOT(Account.RecordTypeId = ‘02345000000kL1d’)
 
   Additional Use: If you are also using different Opportunity record types for each of your Account record types, 
   you can use the same type of Validation on the Opportunity object to keep data consistent.
